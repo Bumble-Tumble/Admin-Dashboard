@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+}
+.mainContent{
+    display: grid;   
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 20vh 80vh ;
+}
+.sidebar{
+    background-color: blue;
+    grid-area: 1/1/3/2;
+
+}
+.header{
+    background-color: black;
+
+}
+.icon{
+    --size: 10%;
+    height: var(--size);
+    width: var(--size);
+}
