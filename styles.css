@@ -16,30 +16,34 @@ body{
     box-shadow: 0 3px 8px 1px #9ca3af;
     z-index: 1;
     padding: 2%;
+    padding-bottom: 5%;
 
 }
 .head1{
     display: grid;
-    grid-template-columns: .2fr 3fr 2fr .2fr .5fr 2fr;
+    grid-template-columns: .2fr 3.5fr 3.5fr .2fr .35fr 2fr;
     align-items: center;
-    column-gap: 4%;
+    column-gap: 2%;
+    padding-bottom: 4%;
 }
 .head2{
     display: grid;
-    grid-template-columns: 15% 1fr 15% 15% 15%;
+    grid-template-columns: 5% 1fr 9% 9% 9%;
     align-items: center;
-    column-gap: 3%;
+    column-gap: 1%;
+    grid-template-rows: 40%;
+
 }
 .icon{
     --size: 10%;
     height: var(--size);
     width: var(--size);
-    filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(55deg) brightness(104%) contrast(103%);
+    filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(55deg) brightness(104%) contrast(103%); /* makes icons white instead of black */
     color: white;
     
 }
 .Headicon{
-    --size: 120%;
+    --size: 100%;
     height: var(--size);
     width: var(--size);
 }
@@ -47,7 +51,7 @@ body{
     --size: 25%;
     height: var(--size);
     width: var(--size);
-    filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(55deg) brightness(104%) contrast(103%);
+    filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(55deg) brightness(104%) contrast(103%);/* same as above makes icons white instead of black */
     
 
     
@@ -70,7 +74,7 @@ body{
 .dashboardSection{
     padding-bottom: 15%;
 }
-.footer{
+.content{
     background-color: #e5e7eb;
 }
 .profilePic{
@@ -85,24 +89,25 @@ body{
 }
 .inputText{
     width: 130%;
-    height: 20%;
+    height: 40%;
     border-radius: 20px;
+    border: none;
     background-color: rgba(221, 221, 221, 0.781);
 }
 .headButt{
     background-color: #0ea5e9;
-    border-radius: 30%;
-    height: 30%;
-    width: 80%;
+    border-radius: 50px; 
+    height: 40px;
+    width: 100px; 
     color: white;
     border: none;
+    padding: 5%;
 }
 .greetText{
     Font-size: 80%;
 }
 .profileName{
-    margin-block-start: 5%;
-    margin-block-end: 5%;
+    margin: 0;
 }
 .headText{
     font-weight: 650;
