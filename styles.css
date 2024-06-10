@@ -76,20 +76,72 @@ body{
 }
 .content{
     background-color: #e5e7eb;
-
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 5% 95%;
+    column-gap: 5%;
 }
 .contentGrid{
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 50% 50%;
     gap: 10px;
     margin: 10px;
+    grid-area: 2/1/2/1;
+
 
 }
 .contentIconBox{
     display: flex;
-    --size: 10%;
+    justify-content: flex-end;
+
+}
+.contentIcon{
+    --size: 7%;
+    padding-left: 2%;
     height: var(--size);
     width: var(--size);
+}
+.contentSidebar{
+    grid-area: 2/2/3/3;
+    width: fit-content;
+}
+.announcementsPanel{
+    width: 25%;
+    background-color: white;
+    padding: 2%;
+    width: 60%;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.3);
+    
+}
+.announcementsInfo{
+    font-size: small;
+    color: grey;
+    margin: 1px;
+    margin-left: 5px;
+    padding-bottom: 5%;
+}
+.announcementsTitle{
+    margin-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.announcements{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: large;
+}
+.trending{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: large;
+}
+.announcementsMiddleBox{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: black;
+    padding-bottom: 5px;
 }
 .card{
     background-color: white;
@@ -103,10 +155,21 @@ body{
 
    
 }
+.cardTitle{
+    font-weight: bold;
+    padding-left: 5%;
+    
+}
+.cardInfo{
+    color: grey;
+    padding-left: 5%;
+    width: 80%;
+}
 .projectTitle{
     font-weight: bold;
     font-size: 25px;
     margin-left: 20px;
+    grid-area: 1/1/2/1;
 
 }
 .profilePic{
@@ -143,4 +206,28 @@ body{
 }
 .headText{
     font-weight: 650;
+}
+.trendingPic{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+.trendingBox{
+    display: flex;
+    padding: 5%;
+}
+.userName{
+    margin: 1px;
+}
+.userProject{
+    margin: 1px;
+    color: grey;
+}
+.trendingPanel{
+    background-color: white;
+    width: 65%;
+    height: 35%;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.3);
 }
